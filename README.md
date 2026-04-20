@@ -17,6 +17,7 @@ O repositorio foi pensado para quem quer mais do que fluencia. OCE quer melhorar
 - Overlays especializados em `domains/` para codigo, pesquisa, estrategia, criatividade, ciencia, seguranca, matematica e filosofia.
 - Suite de exemplos em `examples/` com comportamento antes e depois para tornar o ganho observavel.
 - Benchmarks e matriz comparativa em `benchmarks/` para tratar a arquitetura como algo testavel, nao como folklore de prompt.
+- Guias de integracao em `integrations/` para ChatGPT, Claude, GitHub Copilot, DashScope Alibaba, Ollama local/cloud e APIs programaticas.
 - Um gerador em `tools/generate_repo.py` que recompila e valida o corpus completo do repositorio.
 
 ## Por que isso importa
@@ -107,7 +108,7 @@ Os numeros abaixo sao metas de pesquisa e hipoteses operacionais. Eles nao devem
 | `examples/` | Demos antes e depois para mostrar o ganho de comportamento. |
 | `benchmarks/` | Estruturas de avaliacao, comparacao e tracking de emergencia. |
 | `evolution/` | Versionamento cognitivo do framework. |
-| `integrations/` | Guias de uso em ChatGPT, Claude, Grok, Gemini, Cursor, Ollama e APIs. |
+| `integrations/` | Guias de uso em ChatGPT, Claude, Grok, Gemini, Cursor, GitHub Copilot, DashScope Alibaba, Ollama local/cloud e APIs. |
 | `tools/` | Automacao para regenerar e validar o repositorio. |
 
 ## Para quem e

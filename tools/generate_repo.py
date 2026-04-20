@@ -248,6 +248,7 @@ def readme_text() -> str:
         "- Overlays especializados em `domains/` para codigo, pesquisa, estrategia, criatividade, ciencia, seguranca, matematica e filosofia.",
         "- Suite de exemplos em `examples/` com comportamento antes e depois para tornar o ganho observavel.",
         "- Benchmarks e matriz comparativa em `benchmarks/` para tratar a arquitetura como algo testavel, nao como folklore de prompt.",
+        "- Guias de integracao em `integrations/` para ChatGPT, Claude, GitHub Copilot, DashScope Alibaba, Ollama local/cloud e APIs programaticas.",
         "- Um gerador em `tools/generate_repo.py` que recompila e valida o corpus completo do repositorio.",
         "",
         "## Por que isso importa",
@@ -338,7 +339,7 @@ def readme_text() -> str:
         "| `examples/` | Demos antes e depois para mostrar o ganho de comportamento. |",
         "| `benchmarks/` | Estruturas de avaliacao, comparacao e tracking de emergencia. |",
         "| `evolution/` | Versionamento cognitivo do framework. |",
-        "| `integrations/` | Guias de uso em ChatGPT, Claude, Grok, Gemini, Cursor, Ollama e APIs. |",
+        "| `integrations/` | Guias de uso em ChatGPT, Claude, Grok, Gemini, Cursor, GitHub Copilot, DashScope Alibaba, Ollama local/cloud e APIs. |",
         "| `tools/` | Automacao para regenerar e validar o repositorio. |",
         "",
         "## Para quem e",
@@ -801,7 +802,10 @@ INTEGRATIONS = [
     ("integrations/grok-3.md", "Grok 3", "Guia para usar OCE com Grok 3, preservando task anchor, verificacao de fato e filtro meta-cognitivo em dialogos de alta velocidade.", ["prompting", "truth", "metacognition"], "Funciona porque enfatiza o que mais importa em ambientes de resposta rapida: ancoragem, verificacao e compressao inteligente."),
     ("integrations/gemini-ultra.md", "Gemini Ultra", "Guia para integrar OCE com Gemini Ultra, aproveitando janelas de contexto extensas e tarefas multi-modalmente contextualizadas, sempre com rastreabilidade textual das oito camadas.", ["prompting", "gwt", "active_inference"], "Funciona porque traduz a arquitetura em camadas compatíveis com ambientes de contexto largo."),
     ("integrations/cursor.md", "Cursor", "Guia para usar OCE em fluxos de coding dentro do Cursor. Mostra como combinar o core com overlays de codigo, patch ledger e validacao baseada em teste e root cause.", ["coding", "prompting", "active_inference"], "Funciona porque coding assistido melhora muito quando a arquitetura obriga previsao de regressao e monitor de confianca."),
+    ("integrations/github-copilot.md", "GitHub Copilot", "Guia para ativar OCE em fluxos com GitHub Copilot, incluindo custom instructions, chat contextual, revisao de patches, root cause e disciplina de regressao em tarefas de engenharia.", ["coding", "prompting", "active_inference", "metacognition"], "Funciona porque Copilot rende melhor quando o scaffold ancora objetivo, risco de regressao, criterio de aceite e profundidade certa para cada etapa do trabalho."),
+    ("integrations/dashscope-alibaba.md", "Alibaba DashScope", "Guia para integrar OCE ao DashScope da Alibaba Cloud, com foco em instrucoes de sistema, pipelines programaticos, overlays por tarefa e persistencia externa do amendment ledger em workloads empresariais e multilingues.", ["prompting", "active_inference", "memory"], "Funciona porque DashScope favorece uma orquestracao mais explicita do estado da sessao e da camada de instrucao quando o objetivo e manter previsibilidade, compliance e reutilizacao entre chamadas."),
     ("integrations/ollama-local.md", "Ollama Local", "Guia para rodar OCE em modelos locais via Ollama. Explica limites de contexto, compressao do ledger, overlays minimos e when-to-upgrade para GODMODE em hardware restrito.", ["prompting", "memory", "recurrent"], "Funciona porque modelos locais exigem compressao mais disciplinada do estado cognitivo."),
+    ("integrations/ollama-cloud.md", "Ollama Cloud", "Guia para usar OCE em endpoints Ollama hospedados na nuvem ou em infraestrutura gerenciada, equilibrando contexto, custo por chamada, latencia e persistencia externa do estado cognitivo.", ["prompting", "memory", "recurrent", "active_inference"], "Funciona porque runtimes Ollama remotos permitem persistir o scaffold fora do modelo e escalar profundidade recorrente sem o limite rigido do desktop local."),
     ("integrations/api-openai-anthropic.md", "API OpenAI / Anthropic", "Guia de integracao programatica do OCE em chamadas de API. Inclui estrategia de system prompt, session state, overlay por tarefa e persistencia externa do amendment ledger.", ["prompting", "memory", "active_inference"], "Funciona porque APIs permitem tratar OCE como runtime explicitamente persistido entre chamadas."),
 ]
 

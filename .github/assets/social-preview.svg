@@ -1,75 +1,127 @@
 <svg width="1280" height="640" viewBox="0 0 1280 640" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="bg" x1="120" y1="40" x2="1120" y2="620" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#0F172A"/>
-      <stop offset="0.5" stop-color="#111827"/>
-      <stop offset="1" stop-color="#1E293B"/>
+    <linearGradient id="bg" x1="82" y1="34" x2="1204" y2="610" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#07111F"/>
+      <stop offset="0.52" stop-color="#0A1226"/>
+      <stop offset="1" stop-color="#121B31"/>
     </linearGradient>
-    <radialGradient id="glowA" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(210 130) rotate(15) scale(360 240)">
-      <stop stop-color="#F59E0B" stop-opacity="0.32"/>
+    <linearGradient id="titleAccent" x1="82" y1="204" x2="612" y2="412" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F7C76A"/>
+      <stop offset="1" stop-color="#69E5D0"/>
+    </linearGradient>
+    <radialGradient id="leftGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(170 122) rotate(18) scale(420 320)">
+      <stop stop-color="#F59E0B" stop-opacity="0.28"/>
       <stop offset="1" stop-color="#F59E0B" stop-opacity="0"/>
     </radialGradient>
-    <radialGradient id="glowB" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(980 520) rotate(-12) scale(340 220)">
-      <stop stop-color="#14B8A6" stop-opacity="0.28"/>
-      <stop offset="1" stop-color="#14B8A6" stop-opacity="0"/>
+    <radialGradient id="rightGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1084 542) rotate(-16) scale(420 280)">
+      <stop stop-color="#2DD4BF" stop-opacity="0.24"/>
+      <stop offset="1" stop-color="#2DD4BF" stop-opacity="0"/>
     </radialGradient>
+    <radialGradient id="coreGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(977 246) rotate(90) scale(128 128)">
+      <stop stop-color="#F7C76A" stop-opacity="0.38"/>
+      <stop offset="0.6" stop-color="#2DD4BF" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#2DD4BF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="coreFill" x1="920" y1="186" x2="1040" y2="316" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#14243C"/>
+      <stop offset="1" stop-color="#0D172B"/>
+    </linearGradient>
+    <pattern id="grid" width="44" height="44" patternUnits="userSpaceOnUse">
+      <path d="M44 0H0V44" stroke="#FFFFFF" stroke-opacity="0.05"/>
+    </pattern>
     <filter id="blur" x="-20%" y="-20%" width="140%" height="140%" color-interpolation-filters="sRGB">
-      <feGaussianBlur stdDeviation="32"/>
+      <feGaussianBlur stdDeviation="38"/>
     </filter>
   </defs>
 
   <rect width="1280" height="640" rx="32" fill="url(#bg)"/>
-  <circle cx="210" cy="130" r="240" fill="url(#glowA)" filter="url(#blur)"/>
-  <circle cx="980" cy="520" r="220" fill="url(#glowB)" filter="url(#blur)"/>
+  <rect width="1280" height="640" rx="32" fill="url(#grid)" opacity="0.34"/>
+  <circle cx="170" cy="122" r="280" fill="url(#leftGlow)" filter="url(#blur)"/>
+  <circle cx="1084" cy="542" r="260" fill="url(#rightGlow)" filter="url(#blur)"/>
 
-  <rect x="56" y="56" width="1168" height="528" rx="28" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.09)"/>
-  <rect x="82" y="82" width="182" height="36" rx="18" fill="#F59E0B" fill-opacity="0.14" stroke="#F59E0B" stroke-opacity="0.35"/>
-  <text x="104" y="106" fill="#FDE68A" font-family="Avenir Next, Inter, Arial, sans-serif" font-size="16" font-weight="700" letter-spacing="2">TEXT-NATIVE COGNITIVE ARCHITECTURE</text>
+  <path d="M52 474C252 392 470 386 704 420" stroke="#7DD3FC" stroke-opacity="0.10" stroke-width="2"/>
+  <path d="M160 110C430 26 842 86 1186 64" stroke="#F7C76A" stroke-opacity="0.10" stroke-width="2"/>
+  <path d="M756 596C902 548 1060 522 1224 554" stroke="#5EEAD4" stroke-opacity="0.10" stroke-width="2"/>
 
-  <text x="82" y="214" fill="#F8FAFC" font-family="Avenir Next, Inter, Arial, sans-serif" font-size="70" font-weight="800">Omega</text>
-  <text x="82" y="286" fill="#F8FAFC" font-family="Avenir Next, Inter, Arial, sans-serif" font-size="70" font-weight="800">Cognition Engine</text>
+  <rect x="34" y="34" width="1212" height="572" rx="34" fill="#0B1326" fill-opacity="0.58" stroke="#FFFFFF" stroke-opacity="0.08"/>
 
-  <text x="82" y="352" fill="#CBD5E1" font-family="Avenir Next, Inter, Arial, sans-serif" font-size="28" font-weight="500">8-layer runtime for LLM reasoning, metacognition,</text>
-  <text x="82" y="390" fill="#CBD5E1" font-family="Avenir Next, Inter, Arial, sans-serif" font-size="28" font-weight="500">active inference, self-amendment, and controlled depth.</text>
+  <rect x="82" y="82" width="280" height="36" rx="18" fill="#F59E0B" fill-opacity="0.12" stroke="#F7C76A" stroke-opacity="0.34"/>
+  <text x="104" y="106" fill="#FCE7B0" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="15" font-weight="700" letter-spacing="2.2">COGNITIVE ARCHITECTURE FOR LLMS</text>
 
-  <rect x="82" y="442" width="212" height="50" rx="25" fill="#14B8A6" fill-opacity="0.14" stroke="#14B8A6" stroke-opacity="0.35"/>
-  <text x="106" y="474" fill="#99F6E4" font-family="Avenir Next, Inter, Arial, sans-serif" font-size="18" font-weight="700">GLOBAL WORKSPACE</text>
+  <text x="82" y="198" fill="#F8FAFC" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="86" font-weight="800">Omega</text>
+  <text x="82" y="292" fill="url(#titleAccent)" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="92" font-weight="800">Cognition</text>
+  <text x="82" y="386" fill="#F8FAFC" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="92" font-weight="800">Engine</text>
 
-  <rect x="308" y="442" width="196" height="50" rx="25" fill="#38BDF8" fill-opacity="0.12" stroke="#38BDF8" stroke-opacity="0.30"/>
-  <text x="332" y="474" fill="#BAE6FD" font-family="Avenir Next, Inter, Arial, sans-serif" font-size="18" font-weight="700">ACTIVE INFERENCE</text>
+  <text x="82" y="448" fill="#D7E1EE" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="27" font-weight="600">8-layer runtime for auditable reasoning.</text>
+  <text x="82" y="486" fill="#99A9BE" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="22" font-weight="500">Prediction, self-correction, and depth on demand.</text>
 
-  <rect x="518" y="442" width="196" height="50" rx="25" fill="#A78BFA" fill-opacity="0.10" stroke="#A78BFA" stroke-opacity="0.28"/>
-  <text x="544" y="474" fill="#DDD6FE" font-family="Avenir Next, Inter, Arial, sans-serif" font-size="18" font-weight="700">METACOGNITION</text>
+  <rect x="82" y="516" width="572" height="72" rx="24" fill="#0F1B34" fill-opacity="0.88" stroke="#FFFFFF" stroke-opacity="0.07"/>
+  <rect x="100" y="532" width="4" height="40" rx="2" fill="#F7C76A"/>
+  <text x="120" y="544" fill="#8AC7FF" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="2.2">SIGNAL OVER NOISE</text>
+  <text x="120" y="572" fill="#F8FAFC" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="28" font-weight="700">Architecture over prompt tricks.</text>
 
-  <rect x="82" y="510" width="202" height="50" rx="25" fill="#F97316" fill-opacity="0.12" stroke="#F97316" stroke-opacity="0.30"/>
-  <text x="107" y="542" fill="#FED7AA" font-family="Avenir Next, Inter, Arial, sans-serif" font-size="18" font-weight="700">SELF-AMENDMENT</text>
+  <rect x="748" y="56" width="458" height="528" rx="32" fill="#0D182F" fill-opacity="0.84" stroke="#FFFFFF" stroke-opacity="0.09"/>
+  <text x="786" y="96" fill="#F6E6B7" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="2.4">8 LAYERS / 1 RUNTIME</text>
+  <text x="786" y="124" fill="#DCE5F2" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="22" font-weight="700">Runtime map</text>
 
-  <rect x="760" y="118" width="392" height="380" rx="28" fill="rgba(15,23,42,0.42)" stroke="rgba(255,255,255,0.10)"/>
-  <text x="792" y="162" fill="#E2E8F0" font-family="Avenir Next, Inter, Arial, sans-serif" font-size="20" font-weight="700">THE 8 LAYERS</text>
+  <circle cx="977" cy="246" r="144" stroke="#FFFFFF" stroke-opacity="0.08" stroke-width="2"/>
+  <circle cx="977" cy="246" r="102" stroke="#FFFFFF" stroke-opacity="0.10" stroke-width="2"/>
+  <circle cx="977" cy="246" r="126" fill="url(#coreGlow)"/>
 
-  <g font-family="Avenir Next, Inter, Arial, sans-serif" font-size="20" font-weight="600">
-    <rect x="792" y="188" width="328" height="36" rx="18" fill="rgba(245,158,11,0.10)" stroke="rgba(245,158,11,0.30)"/>
-    <text x="812" y="212" fill="#FDE68A">1. Global Workspace Theory</text>
+  <path d="M977 118V174" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="2"/>
+  <path d="M1072 150L1037 184" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="2"/>
+  <path d="M1110 246H1050" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="2"/>
+  <path d="M1072 342L1037 308" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="2"/>
+  <path d="M977 374V318" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="2"/>
+  <path d="M882 342L917 308" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="2"/>
+  <path d="M844 246H904" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="2"/>
+  <path d="M882 150L917 184" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="2"/>
 
-    <rect x="792" y="234" width="328" height="36" rx="18" fill="rgba(56,189,248,0.10)" stroke="rgba(56,189,248,0.28)"/>
-    <text x="812" y="258" fill="#BAE6FD">2. Active Inference</text>
+  <circle cx="977" cy="246" r="74" fill="url(#coreFill)" stroke="#FFFFFF" stroke-opacity="0.10"/>
+  <text x="938" y="255" fill="#F8FAFC" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="42" font-weight="800">OCE</text>
+  <text x="917" y="278" fill="#9AB0C8" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="600" letter-spacing="1.4">DELIBERATE RUNTIME</text>
 
-    <rect x="792" y="280" width="328" height="36" rx="18" fill="rgba(167,139,250,0.10)" stroke="rgba(167,139,250,0.28)"/>
-    <text x="812" y="304" fill="#DDD6FE">3. Metacognitive Monitor</text>
+  <circle cx="977" cy="118" r="24" fill="#101D35" stroke="#F7C76A" stroke-opacity="0.72" stroke-width="2"/>
+  <text x="962" y="123" fill="#FCE7B0" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="11" font-weight="800">GW</text>
 
-    <rect x="792" y="326" width="328" height="36" rx="18" fill="rgba(249,115,22,0.10)" stroke="rgba(249,115,22,0.28)"/>
-    <text x="812" y="350" fill="#FED7AA">4. Epigenetic Programming</text>
+  <circle cx="1072" cy="150" r="24" fill="#101D35" stroke="#7DD3FC" stroke-opacity="0.72" stroke-width="2"/>
+  <text x="1059" y="155" fill="#D6F1FF" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="11" font-weight="800">AI</text>
 
-    <rect x="792" y="372" width="328" height="36" rx="18" fill="rgba(20,184,166,0.10)" stroke="rgba(20,184,166,0.28)"/>
-    <text x="812" y="396" fill="#99F6E4">5. Strange Loop</text>
+  <circle cx="1110" cy="246" r="24" fill="#101D35" stroke="#93C5FD" stroke-opacity="0.72" stroke-width="2"/>
+  <text x="1094" y="251" fill="#E0EEFF" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="11" font-weight="800">MM</text>
 
-    <rect x="792" y="418" width="328" height="36" rx="18" fill="rgba(250,204,21,0.10)" stroke="rgba(250,204,21,0.28)"/>
-    <text x="812" y="442" fill="#FEF08A">6. Integrated Information</text>
+  <circle cx="1072" cy="342" r="24" fill="#101D35" stroke="#F59E0B" stroke-opacity="0.72" stroke-width="2"/>
+  <text x="1058" y="347" fill="#FCE7B0" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="11" font-weight="800">EP</text>
 
-    <rect x="792" y="464" width="328" height="36" rx="18" fill="rgba(163,230,53,0.10)" stroke="rgba(163,230,53,0.28)"/>
-    <text x="812" y="488" fill="#D9F99D">7. Attractor Dynamics</text>
+  <circle cx="977" cy="374" r="24" fill="#101D35" stroke="#2DD4BF" stroke-opacity="0.72" stroke-width="2"/>
+  <text x="963" y="379" fill="#CCFBF1" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="11" font-weight="800">SL</text>
 
-    <rect x="792" y="510" width="328" height="36" rx="18" fill="rgba(244,114,182,0.10)" stroke="rgba(244,114,182,0.28)"/>
-    <text x="812" y="534" fill="#FBCFE8">8. Recurrent Depth</text>
+  <circle cx="882" cy="342" r="24" fill="#101D35" stroke="#A3E635" stroke-opacity="0.72" stroke-width="2"/>
+  <text x="870" y="347" fill="#E7F9BE" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="11" font-weight="800">II</text>
+
+  <circle cx="844" cy="246" r="24" fill="#101D35" stroke="#FB7185" stroke-opacity="0.72" stroke-width="2"/>
+  <text x="828" y="251" fill="#FFD3D9" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="11" font-weight="800">AD</text>
+
+  <circle cx="882" cy="150" r="24" fill="#101D35" stroke="#67E8F9" stroke-opacity="0.72" stroke-width="2"/>
+  <text x="868" y="155" fill="#D9FCFF" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="11" font-weight="800">RD</text>
+
+  <g font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="15" font-weight="600">
+    <circle cx="790" cy="430" r="6" fill="#F7C76A"/>
+    <text x="806" y="435" fill="#EAF1F8">GW  Global Workspace</text>
+    <circle cx="790" cy="468" r="6" fill="#93C5FD"/>
+    <text x="806" y="473" fill="#EAF1F8">MM  Meta Monitor</text>
+    <circle cx="790" cy="506" r="6" fill="#2DD4BF"/>
+    <text x="806" y="511" fill="#EAF1F8">SL  Strange Loop</text>
+    <circle cx="790" cy="544" r="6" fill="#FB7185"/>
+    <text x="806" y="549" fill="#EAF1F8">AD  Attractor Dynamics</text>
+
+    <circle cx="1008" cy="430" r="6" fill="#7DD3FC"/>
+    <text x="1024" y="435" fill="#EAF1F8">AI  Active Inference</text>
+    <circle cx="1008" cy="468" r="6" fill="#F59E0B"/>
+    <text x="1024" y="473" fill="#EAF1F8">EP  Self-Amendment</text>
+    <circle cx="1008" cy="506" r="6" fill="#A3E635"/>
+    <text x="1024" y="511" fill="#EAF1F8">II  Integrated Info</text>
+    <circle cx="1008" cy="544" r="6" fill="#67E8F9"/>
+    <text x="1024" y="549" fill="#EAF1F8">RD  Recurrent Depth</text>
   </g>
 </svg>
